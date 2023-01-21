@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;700;800;900&display=swap');
 
 :root {
-    --text-color: #667085;
+    --legend-color: #667085;
     --logo-color: #3A404E;
-  }
+    --highlight-color: #8E2424;
+    --text-color: #101828;
+    --highlight-op-color: rgba(142, 36, 36, 0.05);
+}
 
 * {
     box-sizing: border-box;
@@ -12,7 +15,7 @@
     font-family: 'Inter'
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
 }
@@ -23,11 +26,12 @@ a {
 
 nav {
     background-color: white;
-    width: 100%;
+
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0 7rem 0 7rem;
 }
 
 .navlogo {
@@ -44,30 +48,149 @@ nav {
     color: var(--logo-color);
 }
 
-.navmenu{
+.navmenu {
     display: flex;
     padding: 0 500px 0 0;
-    
+
 }
 
-.navmenu a, .enterbutton, .cadastrobutton{
+.navmenu a,
+.enterbutton,
+.cadastrobutton {
     font-weight: 500;
-    font-size: 16px;    
+    font-size: 16px;
     line-height: 24px;
     font-size: medium;
 }
 
-.navmenu a{
+.navmenu a {
     margin-right: 2rem;
 }
-.navmenu a, .enterbutton{
-    color: var(--text-color);
+
+.navmenu a,
+.enterbutton {
+    color: var(--legend-color);
 }
 
-.cadastrobutton{
+.cadastrobutton {
     color: #FFFFFF;
-    background-color: #8E2424;
+    background-color: var(--highlight-color);
     padding: 0.625rem 1.125rem;
     margin: 0 0 0 30px;
     border-radius: 0.5rem;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aboutus h6 {
+    color: var(--highlight-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 6rem 0 1.5rem 0;
+    font-weight: 600;
+}
+
+.aboutus h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 2.25rem;
+    color: var(--text-color)
+}
+
+.aboutus p {
+    width: 49.375rem;
+    text-align: center;
+    color: var(--legend-color);
+    margin-bottom: 6.688rem;
+}
+
+.metricas {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 7rem 0 7rem;
+}
+
+.metricas div {
+    width: 17.5rem;
+}
+
+.margin {
+    margin: 0 2rem 0 0;
+}
+
+
+.metricas h3 {
+    color: var(--highlight-color);
+    font-size: 3.75rem;
+    font-weight: 600;
+    padding-bottom: 0.75rem;
+}
+
+.metricas-title {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding-bottom: 0.5rem;
+}
+
+.metricas-desc {
+    color: var(--legend-color);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.looking-talents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vacancies {
+    background-color: var(--highlight-op-color);
+    color: var(--highlight-color);
+    border-radius: 1rem;
+    height: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12.25rem 0 1.25rem 0;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48rem;
+
+}
+
+.announcement h1 {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.02rem;
+}
+
+.announcement p {
+    color: var(--legend-color);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-style: normal;
+    margin-bottom: 4rem;
+}
+
+.announcement-img {
+    background-color: #8E2424;
+
 }
